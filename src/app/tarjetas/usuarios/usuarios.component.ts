@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { PlacesService } from './places.service';
-import { place } from './place/place';
-
-
+import { place } from 'src/app/place/place';
+import { PlacesService } from 'src/app/places.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-usuarios',
+  templateUrl: './usuarios.component.html',
+  styleUrls: ['./usuarios.component.css']
 })
-export class AppComponent implements OnInit {
+export class UsuariosComponent implements OnInit {
+
  
   usuarios: place[];
  

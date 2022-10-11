@@ -1,0 +1,34 @@
+<h1 class="text-center text-info">Ingreso de Personal</h1>
+<hr>
+<form  formControlName="" class="contenedorFormulario" [formGroup]="formulario" (ngSubmit)="ingresoEmpleado(formulario.value)">
+  <div class="form-group">
+    <label for="exampleNombre">Nombre</label>
+    <input type="text" class="form-control" id="exampleNombre" aria-describedby="emailHelp" placeholder="Nombre" formControlName="nombre">
+  </div>
+  <div class="form-group">
+    <label for="exampleApellido">Apellido</label>
+    <input type="text" class="form-control" id="exampleApellido" placeholder="Apellido" formControlName="apellido">
+  </div>
+  <div class="form-group">
+    <label for="exampleCargo">Cargo</label>
+    <input type="text" class="form-control" id="exampleCargo" placeholder="Cargo" formControlName="cargo">
+  </div>
+  <div class="form-group">
+    <label for="exampleSalario">Salario</label>
+    <input type="number" class="form-control" id="exampleSalario" placeholder="Salario" formControlName="salario">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleEmail">Email</label>
+    <input type="email" class="form-control" id="exampleEmail" placeholder="Email" formControlName="email">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleCedula">Cedula</label>
+    <input type="number" class="form-control" id="exampleCedula" placeholder="Cedula" formControlName="cedula">
+  </div>
+
+  <button type="submit" values="ingresoEmpleado()" class="btn btn-primary">Agregar Empleado</button>
+
+</form>
+
